@@ -10,5 +10,10 @@ namespace TvShowManager
         public int Number { get; set; }
         public string Name { get; set; }
         public DateTime FirstAired { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Season.Number}x{Number}: {Name}";
+        }
     }
 }
